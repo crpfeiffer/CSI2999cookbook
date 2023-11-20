@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-details {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="recipe-details">
+
+    <script>
+        function getRecipeDetails() {
+            // Get the recipe name from the URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const recipeName = urlParams.get('recipe');
+
+            // Display details based on the recipe name
+            document.write('<h1>' + recipeName + '</h1>');
+
+            // Define ingredients for each recipe
+            const ingredients = {
+                'Spaghetti Bolognese': ['Ground beef', 'onion', 'garlic', 'tomatoes', 'spaghetti', 'olive oil', 'salt', 'pepper'],
+                'Chicken Alfredo': ['Chicken breast', 'fettuccine', 'heavy cream', 'parmesan cheese', 'butter', 'garlic', 'salt', 'pepper'],
+                'Beef Stir Fry': ['Beef strips', 'broccoli', 'bell peppers', 'soy sauce', 'ginger', 'garlic', 'vegetable oil'],
+                'Margherita Pizza': ['Pizza dough', 'tomato sauce', 'fresh mozzarella', 'basil', 'olive oil', 'salt'],
+                'Grilled Salmon': ['Salmon fillets', 'lemon', 'dill', 'olive oil', 'salt', 'pepper'],
+                'Vegetarian Stir Fry': ['Tofu', 'broccoli', 'carrots', 'snap peas', 'soy sauce', 'ginger', 'garlic', 'sesame oil'],
+                'Chicken Caesar Salad': ['Grilled chicken', 'romaine lettuce', 'croutons', 'parmesan cheese', 'Caesar dressing'],
+                'Shrimp Scampi': ['Shrimp', 'linguine', 'garlic', 'white wine', 'lemon', 'butter', 'parsley'],
+                'BBQ Pulled Pork Sandwich': ['Pulled pork', 'barbecue sauce', 'coleslaw', 'hamburger buns'],
+                'Veggie Wrap': ['Hummus', 'whole wheat wrap', 'cucumber', 'tomato', 'bell peppers', 'lettuce', 'feta cheese']
+            };
+
+            // Display ingredients in list format
+            document.write('<h2>Ingredients:</h2>');
+            document.write('<ul>');
+            ingredients[recipeName].forEach(ingredient => {
+                document.write('<li>' + ingredient + '</li>');
+            });
+            document.write('</ul>');
+
+            // Display cooking steps
+            document.write('<h2>Cooking Steps:</h2>');
+            if (recipeName === 'Spaghetti Bolognese') {
+                document.write('<p>Boil water, cook spaghetti, brown ground beef, sauté onions and garlic, add tomatoes, season with salt and pepper, serve over spaghetti.</p>');
+            } else if (recipeName === 'Chicken Alfredo') {
+                document.write('<p>Cook fettuccine, sauté chicken breast, prepare Alfredo sauce with heavy cream, parmesan cheese, and butter, mix with pasta, season with salt and pepper.</p>');
+            } else if (recipeName === 'Beef Stir Fry') {
+                document.write('<p>Slice beef into strips, stir-fry with broccoli and bell peppers, add soy sauce, ginger, and garlic, cook until beef is browned and vegetables are tender.</p>');
+            } else if (recipeName === 'Margherita Pizza') {
+                document.write('<p>Roll out pizza dough, spread tomato sauce, add fresh mozzarella slices, sprinkle with basil, drizzle with olive oil, bake until crust is golden.</p>');
+            } else if (recipeName === 'Grilled Salmon') {
+                document.write('<p>Season salmon fillets with salt, pepper, and dill, grill until cooked through, squeeze lemon juice over the top before serving.</p>');
+            } else if (recipeName === 'Vegetarian Stir Fry') {
+                document.write('<p>Cube tofu, stir-fry with broccoli, carrots, snap peas, soy sauce, ginger, and garlic, drizzle with sesame oil.</p>');
+            } else if (recipeName === 'Chicken Caesar Salad') {
+                document.write('<p>Grill chicken, chop romaine lettuce, toss with croutons, parmesan cheese, and Caesar dressing, top with grilled chicken.</p>');
+            } else if (recipeName === 'Shrimp Scampi') {
+                document.write('<p>Cook linguine, sauté shrimp with garlic, white wine, lemon juice, and butter, toss with pasta, garnish with parsley.</p>');
+            } else if (recipeName === 'BBQ Pulled Pork Sandwich') {
+                document.write('<p>Slow-cook pulled pork with barbecue sauce, shred, assemble on hamburger buns, top with coleslaw.</p>');
+            } else if (recipeName === 'Veggie Wrap') {
+                document.write('<p>Spread hummus on a whole wheat wrap, add cucumber, tomato, bell peppers, lettuce, and feta cheese, wrap and serve.</p>');
+            }
+
+        }
+
+        // Call the function when the page loads
+        getRecipeDetails();
+    </script>
+
+</div>
+
+</body>
+</html>

@@ -3,90 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cookbook</title>
+    <title>Dinner Recipes</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background-color: #f8f8f8;
+            background-color: #f0f0f0;
             color: #333;
         }
-
-        header {
-            text-align: center;
+        h1, h2 {
+            color: #444;
+        }
+        .recipe {
+            cursor: pointer;
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        section {
-            margin: 20px 0;
-            background-color: #fff;
-            padding: 15px;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
-
-        h2 {
-            color: #4CAF50;
+        .recipe:hover {
+            transform: scale(1.02);
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
+        .recipe img {
+            max-width: 100%; /* Set maximum width for images */
+            height: 150px; /* Set fixed height for images */
+            border: 1px solid #ddd; /* Add border around images */
+            border-radius: 8px;
             margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(175, 107, 76);
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
-<body>
+<body style="background-color: #f0f0f0;">
 
-    <header>
-        <h1>My Cookbook</h1>
-        <p>Explore a variety of delicious recipes</p>
-    </header>
+<!-- Recipe 1: Spaghetti Bolognese -->
+<div class="recipe" onclick="showRecipe('Spaghetti Bolognese')">
+    <img src="images/spaghetti_bolognese.jpg" alt="Spaghetti Bolognese">
+    <h2 style="color: #e44d26;">Spaghetti Bolognese</h2>
+    <p>Ingredients: Ground beef, onion, garlic, tomatoes, spaghetti, olive oil, salt, pepper.</p>
+</div>
 
-    <section>
-        <h2>Breakfast Recipes</h2>
-        <ul>
-            <li><a href="#pancakes">Pancakes</a></li>
-            <li><a href="#smoothie">Fruit Smoothie</a></li>
-            <!-- Add more breakfast recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 2: Chicken Alfredo -->
+<div class="recipe" onclick="showRecipe('Chicken Alfredo')">
+    <img src="images/chicken_alfredo.jpg" alt="Chicken Alfredo">
+    <h2 style="color: #0275d8;">Chicken Alfredo</h2>
+    <p>Ingredients: Chicken breast, fettuccine, heavy cream, parmesan cheese, butter, garlic, salt, pepper.</p>
+</div>
 
-    <section>
-        <h2>Lunch Recipes</h2>
-        <ul>
-            <li><a href="#salad">Caesar Salad</a></li>
-            <li><a href="#sandwich">Turkey Sandwich</a></li>
-            <!-- Add more lunch recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 3: Beef Stir Fry -->
+<div class="recipe" onclick="showRecipe('Beef Stir Fry')">
+    <img src="images/beef_stir_fry.jpg" alt="Beef Stir Fry">
+    <h2 style="color: #34a853;">Beef Stir Fry</h2>
+    <p>Ingredients: Beef strips, broccoli, bell peppers, soy sauce, ginger, garlic, vegetable oil.</p>
+</div>
 
-    <section>
-        <h2>Dinner Recipes</h2>
-        <ul>
-            <li><a href="#spaghetti">Spaghetti Bolognese</a></li>
-            <li><a href="#stirfry">Chicken Stir-Fry</a></li>
-            <!-- Add more dinner recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 4: Margherita Pizza -->
+<div class="recipe" onclick="showRecipe('Margherita Pizza')">
+    <img src="images/margherita_pizza.jpg" alt="Margherita Pizza">
+    <h2 style="color: #fbbc05;">Margherita Pizza</h2>
+    <p>Ingredients: Pizza dough, tomato sauce, fresh mozzarella, basil, olive oil, salt.</p>
+</div>
 
-    <footer>
-        <p>&copy; 2023 My Cookbook. All rights reserved.</p>
-    </footer>
-    
+<!-- Recipe 5: Grilled Salmon -->
+<div class="recipe" onclick="showRecipe('Grilled Salmon')">
+    <img src="images/grilled_salmon.jpg" alt="Grilled Salmon">
+    <h2 style="color: #4285f4;">Grilled Salmon</h2>
+    <p>Ingredients: Salmon fillets, lemon, dill, olive oil, salt, pepper.</p>
+</div>
+
+<!-- Recipe 6: Vegetarian Stir Fry -->
+<div class="recipe" onclick="showRecipe('Vegetarian Stir Fry')">
+    <img src="images/vegetarian_stir_fry.jpg" alt="Vegetarian Stir Fry">
+    <h2 style="color: #ea4335;">Vegetarian Stir Fry</h2>
+    <p>Ingredients: Tofu, broccoli, carrots, snap peas, soy sauce, ginger, garlic, sesame oil.</p>
+</div>
+
+<!-- Recipe 7: Chicken Caesar Salad -->
+<div class="recipe" onclick="showRecipe('Chicken Caesar Salad')">
+    <img src="images/chicken_caesar_salad.jpg" alt="Chicken Caesar Salad">
+    <h2 style="color: #673ab7;">Chicken Caesar Salad</h2>
+    <p>Ingredients: Grilled chicken, romaine lettuce, croutons, parmesan cheese, Caesar dressing.</p>
+</div>
+
+<!-- Recipe 8: Shrimp Scampi -->
+<div class="recipe" onclick="showRecipe('Shrimp Scampi')">
+    <img src="images/shrimp_scampi.jpg" alt="Shrimp Scampi">
+    <h2 style="color: #0f9d58;">Shrimp Scampi</h2>
+    <p>Ingredients: Shrimp, linguine, garlic, white wine, lemon, butter, parsley.</p>
+</div>
+
+<!-- Recipe 9: BBQ Pulled Pork Sandwich -->
+<div class="recipe" onclick="showRecipe('BBQ Pulled Pork Sandwich')">
+    <img src="images/bbq_pulled_pork_sandwich.jpg" alt="BBQ Pulled Pork Sandwich">
+    <h2 style="color: #ff5722;">BBQ Pulled Pork Sandwich</h2>
+    <p>Ingredients: Pulled pork, barbecue sauce, coleslaw, hamburger buns.</p>
+</div>
+
+<!-- Recipe 10: Veggie Wrap -->
+<div class="recipe" onclick="showRecipe('Veggie Wrap')">
+    <img src="images/veggie_wrap.jpg" alt="Veggie Wrap">
+    <h2 style="color: #ff5722;">Veggie Wrap</h2>
+    <p>Ingredients: Hummus, whole wheat wrap, cucumber, tomato, bell peppers, lettuce, feta cheese.</p>
+</div>
+
+<!-- Add more recipes as needed -->
+
+<script>
+    function showRecipe(recipeName) {
+        // You can replace the '#' with the path to your detailed recipe page
+        window.location.href = 'recipe-details.html?recipe=' + encodeURIComponent(recipeName);
+    }
+</script>
+
 </body>
+</html>
