@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-details {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="recipe-details2">
+
+    <script>
+        function getRecipeDetails() {
+            // Get the recipe name from the URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const recipeName = urlParams.get('recipe');
+
+            // Display details based on the recipe name
+            document.write('<h1>' + recipeName + '</h1>');
+
+            // Define ingredients for each recipe
+            const ingredients = {
+                'Chocolate Cake': ['Flour', 'sugar', 'cocoa powder', 'baking powder', 'eggs', 'milk', 'butter', 'vanilla extract'],
+                'Strawberry Cheesecake': ['Graham cracker crust', 'cream cheese', 'sugar', 'eggs', 'sour cream', 'vanilla extract', 'strawberries'],
+                'Apple Pie': ['Pie crust', 'apples', 'sugar', 'cinnamon', 'nutmeg', 'butter'],
+                'Vanilla Cupcakes': ['Flour', 'sugar', 'butter', 'eggs', 'milk', 'vanilla extract', 'baking powder'],
+                'Lemon Bars': ['Shortbread crust', 'sugar', 'flour', 'eggs', 'lemon juice', 'powdered sugar'],
+                'Chocolate Chip Cookies': ['Flour', 'butter', 'sugar', 'chocolate chips', 'eggs', 'vanilla extract', 'baking soda'],
+                'Peach Cobbler': ['Fresh peaches', 'sugar', 'flour', 'butter', 'cinnamon', 'baking powder', 'milk'],
+                'Red Velvet Cake': ['Cake flour', 'buttermilk', 'cocoa powder', 'red food coloring', 'cream cheese frosting'],
+                'Banana Bread': ['Ripe bananas', 'flour', 'sugar', 'eggs', 'butter', 'baking soda', 'vanilla extract'],
+                'Mango Sorbet': ['Mangoes', 'sugar', 'water', 'lime juice']
+            };
+
+            // Display ingredients in list format
+            document.write('<h2>Ingredients:</h2>');
+            document.write('<ul>');
+            ingredients[recipeName].forEach(ingredient => {
+                document.write('<li>' + ingredient + '</li>');
+            });
+            document.write('</ul>');
+
+            // Display cooking steps
+            document.write('<h2>Cooking Steps:</h2>');
+            // Add cooking steps for each recipe
+            if (recipeName === 'Chocolate Cake') {
+                document.write('<p>Preheat the oven, mix dry ingredients, add wet ingredients, bake, and enjoy!</p>');
+            } else if (recipeName === 'Strawberry Cheesecake') {
+                document.write('<p>Create the crust, mix the filling, bake, and refrigerate before serving with fresh strawberries.</p>');
+            } else if (recipeName === 'Apple Pie') {
+                document.write('<p>Prepare the crust, mix apple filling, assemble, bake until golden brown.</p>');
+            } else if (recipeName === 'Vanilla Cupcakes') {
+                document.write('<p>Mix dry and wet ingredients, fill cupcake liners, bake, and frost as desired.</p>');
+            } else if (recipeName === 'Lemon Bars') {
+                document.write('<p>Make shortbread crust, pour lemon filling, bake, and dust with powdered sugar.</p>');
+            } else if (recipeName === 'Chocolate Chip Cookies') {
+                document.write('<p>Cream butter and sugar, add eggs and vanilla, mix dry ingredients, fold in chocolate chips, bake.</p>');
+            } else if (recipeName === 'Peach Cobbler') {
+                document.write('<p>Slice and sweeten peaches, make batter, pour over peaches, bake until golden and bubbly.</p>');
+            } else if (recipeName === 'Red Velvet Cake') {
+                document.write('<p>Mix dry and wet ingredients, add red food coloring, bake, and frost with cream cheese frosting.</p>');
+            } else if (recipeName === 'Banana Bread') {
+                document.write('<p>Mash bananas, mix with wet ingredients, fold in dry ingredients, bake until a toothpick comes out clean.</p>');
+            } else if (recipeName === 'Mango Sorbet') {
+                document.write('<p>Blend mangoes, sugar, water, and lime juice until smooth, freeze, and enjoy!</p>');
+            }
+
+        }
+
+        // Call the function when the page loads
+        getRecipeDetails();
+    </script>
+
+</div>
+
+</body>
+</html>
