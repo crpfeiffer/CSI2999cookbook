@@ -3,90 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cookbook</title>
+    <title>Lunch Recipes</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background-color: #f8f8f8;
+            background-color: #f0f0f0;
             color: #333;
         }
-
-        header {
-            text-align: center;
+        h1, h2 {
+            color: #444;
+        }
+        .recipe {
+            cursor: pointer;
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        section {
-            margin: 20px 0;
-            background-color: #fff;
-            padding: 15px;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
-
-        h2 {
-            color: #4CAF50;
+        .recipe:hover {
+            transform: scale(1.02);
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
+        .recipe img {
+            max-width: 1000%; /* Set maximum width for images */
+            height: 150px; /* Set fixed height for images */
+            border: 1px solid #ddd; /* Add border around images */
+            border-radius: 8px;
             margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(175, 107, 76);
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
-<body>
+<body style="background-color: #f0f0f0;">
 
-    <header>
-        <h1>My Cookbook</h1>
-        <p>Explore a variety of delicious recipes</p>
-    </header>
+<!-- Recipe 1: Fresh Tomato Soup -->
+<div class="recipe" onclick="showRecipe('Fresh Tomato Soup')">
+    <img src="images/freshTomatoSoup.jpeg" alt="Fresh Tomato Soup">
+    <h2 style="color: #0f9d58;">Fresh Tomato Soup</h2>
+    <p> This tomato soup recipe is simple, quick, and perfect to make when tomatoes are ripe in gardens and farmers' markets for a delicious summertime treat. </p>
+</div>
 
-    <section>
-        <h2>Breakfast Recipes</h2>
-        <ul>
-            <li><a href="#pancakes">Pancakes</a></li>
-            <li><a href="#smoothie">Fruit Smoothie</a></li>
-            <!-- Add more breakfast recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 2: Lazy Chicken Parmesan Grilled Cheese -->
+<div class="recipe" onclick="showRecipe('Lazy Chicken Parmesan Grilled Cheese')">
+    <img src="images/strawberry_cheesecake.jpeg" alt="Lazy Chicken Parmesan Grilled Cheese">
+    <h2 style="color: #0f9d58;">Lazy Chicken Parmesan Grilled Cheese</h2>
+    <p> This Chicken Parmesan Grilled Cheese sandwich is a quick and delicious recipe using frozen breaded chicken </p>
+</div>
 
-    <section>
-        <h2>Lunch Recipes</h2>
-        <ul>
-            <li><a href="#salad">Caesar Salad</a></li>
-            <li><a href="#sandwich">Turkey Sandwich</a></li>
-            <!-- Add more lunch recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 3: Macaroni and Cheese (Gluten-Free) -->
+<div class="recipe" onclick="showRecipe('Macaroni and Cheese(Gluten-Free)')">
+    <img src="images/apple_pie.jpeg" alt="Macaroni and Cheese(Gluten-Free)"
+    >
+    <h2 style="color: #0f9d58;">Apple Pie</h2>
+    <p>This gluten-free mac and cheese recipe is super easy to make and kid approved. Cheesy gluten-free deliciousness!</p>
+</div>
 
-    <section>
-        <h2>Dinner Recipes</h2>
-        <ul>
-            <li><a href="#spaghetti">Spaghetti Bolognese</a></li>
-            <li><a href="#stirfry">Chicken Stir-Fry</a></li>
-            <!-- Add more dinner recipes as needed -->
-        </ul>
-    </section>
+<!-- Recipe 4: Vanilla Cupcakes -->
+<div class="recipe" onclick="showRecipe('Vanilla Cupcakes')">
+    <img src="images/vanilla_cupcakes.jpeg" alt="Vanilla Cupcakes">
+    <h2 style="color: #0f9d58;">Vanilla Cupcakes</h2>
+    <p>Ingredients: Flour, sugar, butter, eggs, milk, vanilla extract, baking powder.</p>
+</div>
 
-    <footer>
-        <p>&copy; 2023 My Cookbook. All rights reserved.</p>
-    </footer>
-    
+<!-- Recipe 5: Lemon Bars -->
+<div class="recipe" onclick="showRecipe('Lemon Bars')">
+    <img src="images/lemon_bars.jpeg" alt="Lemon Bars">
+    <h2 style="color: #0f9d58;">Lemon Bars</h2>
+    <p>Ingredients: Shortbread crust, sugar, flour, eggs, lemon juice, powdered sugar.</p>
+</div>
+
+<!-- Recipe 6: Chocolate Chip Cookies -->
+<div class="recipe" onclick="showRecipe('Chocolate Chip Cookies')">
+    <img src="images/chocolate_chip_cookies.jpeg" alt="Chocolate Chip Cookies">
+    <h2 style="color: #0f9d58;">Chocolate Chip Cookies</h2>
+    <p>Ingredients: Flour, butter, sugar, chocolate chips, eggs, vanilla extract, baking soda.</p>
+</div>
+
+<!-- Recipe 7: Peach Cobbler -->
+<div class="recipe" onclick="showRecipe('Peach Cobbler')">
+    <img src="images/peach_cobbler.jpeg" alt="Peach Cobbler">
+    <h2 style="color: #0f9d58;">Peach Cobbler</h2>
+    <p>Ingredients: Fresh peaches, sugar, flour, butter, cinnamon, baking powder, milk.</p>
+</div>
+
+<!-- Recipe 8: Red Velvet Cake -->
+<div class="recipe" onclick="showRecipe('Red Velvet Cake')">
+    <img src="images/red_velvet_cake.jpeg" alt="Red Velvet Cake">
+    <h2 style="color: #0f9d58;">Red Velvet Cake</h2>
+    <p>Ingredients: Cake flour, buttermilk, cocoa powder, red food coloring, cream cheese frosting.</p>
+</div>
+
+<!-- Recipe 9: Banana Bread -->
+<div class="recipe" onclick="showRecipe('Banana Bread')">
+    <img src="images/banana_bread.jpeg" alt="Banana Bread">
+    <h2 style="color: #0f9d58;">Banana Bread</h2>
+    <p>Ingredients: Ripe bananas, flour, sugar, eggs, butter, baking soda, vanilla extract.</p>
+</div>
+
+<!-- Recipe 10: Mango Sorbet -->
+<div class="recipe" onclick="showRecipe('Mango Sorbet')">
+    <img src="images/mango_sorbet.jpeg" alt="Mango Sorbet">
+    <h2 style="color: #0f9d58;">Mango Sorbet</h2>
+    <p>Ingredients: Mangoes, sugar, water, lime juice.</p>
+</div>
+<script>
+    function showRecipe(recipeName) {
+        // You can replace the '#' with the path to your detailed recipe page
+        window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
+    }
+</script>
+
 </body>
+</html>
