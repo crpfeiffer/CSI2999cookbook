@@ -43,16 +43,16 @@
 
             // Define ingredients for each recipe
             const ingredients = {
-                'Chocolate Cake': ['Flour', 'sugar', 'cocoa powder', 'baking powder', 'eggs', 'milk', 'butter', 'vanilla extract'],
-                'Strawberry Cheesecake': ['Graham cracker crust', 'cream cheese', 'sugar', 'eggs', 'sour cream', 'vanilla extract', 'strawberries'],
+                'Gluten-Free Chocolate Cake': ['Gluten-free flour', 'sugar', 'cocoa powder', 'baking powder', 'eggs', 'milk', 'butter', 'vanilla extract'],
+                'Gluten-Free Strawberry Cheesecake': ['Gluten-free graham cracker crust', 'cream cheese', 'sugar', 'eggs', 'sour cream', 'vanilla extract', 'strawberries'],
                 'Apple Pie': ['Pie crust', 'apples', 'sugar', 'cinnamon', 'nutmeg', 'butter'],
-                'Vanilla Cupcakes': ['Flour', 'sugar', 'butter', 'eggs', 'milk', 'vanilla extract', 'baking powder'],
-                'Lemon Bars': ['Shortbread crust', 'sugar', 'flour', 'eggs', 'lemon juice', 'powdered sugar'],
+                'Healthier Vanilla Cupcakes': ['Whole grain flour', 'natural sweeteners', 'butter', 'eggs', 'milk', 'vanilla extract', 'baking powder'],
+                'Healthier Lemon Bars': ['Whole grain shortbread crust', 'natural sweeteners', 'flour', 'eggs', 'lemon juice', 'powdered sugar'],
                 'Chocolate Chip Cookies': ['Flour', 'butter', 'sugar', 'chocolate chips', 'eggs', 'vanilla extract', 'baking soda'],
                 'Peach Cobbler': ['Fresh peaches', 'sugar', 'flour', 'butter', 'cinnamon', 'baking powder', 'milk'],
                 'Red Velvet Cake': ['Cake flour', 'buttermilk', 'cocoa powder', 'red food coloring', 'cream cheese frosting'],
-                'Banana Bread': ['Ripe bananas', 'flour', 'sugar', 'eggs', 'butter', 'baking soda', 'vanilla extract'],
-                'Mango Sorbet': ['Mangoes', 'sugar', 'water', 'lime juice']
+                'Dairy-Free Banana Bread': ['Ripe bananas', 'flour', 'sugar', 'eggs', 'dairy-free butter', 'baking soda', 'vanilla extract'],
+                'Dairy-Free Mango Sorbet': ['Mangoes', 'sugar', 'water', 'lime juice']
             };
 
             // Display ingredients in list format
@@ -66,29 +66,29 @@
             // Display cooking steps
             document.write('<h2>Cooking Steps:</h2>');
             // Add cooking steps for each recipe
-            if (recipeName === 'Chocolate Cake') {
-                document.write('<p>Preheat the oven, mix dry ingredients, add wet ingredients, bake, and enjoy!</p>');
-            } else if (recipeName === 'Strawberry Cheesecake') {
-                document.write('<p>Create the crust, mix the filling, bake, and refrigerate before serving with fresh strawberries.</p>');
+            if (recipeName === 'Gluten-Free Chocolate Cake') {
+                document.write('<p>Preheat the oven, mix gluten-free flour, cocoa powder, and baking powder. Add eggs, milk, melted butter, and vanilla extract. Bake and enjoy!</p>');
+            } else if (recipeName === 'Gluten-Free Strawberry Cheesecake') {
+                document.write('<p>Create a gluten-free graham cracker crust. Mix cream cheese, sugar, eggs, sour cream, and vanilla extract. Pour over the crust, add strawberries, and bake.</p>');
             } else if (recipeName === 'Apple Pie') {
-                document.write('<p>Prepare the crust, mix apple filling, assemble, bake until golden brown.</p>');
-            } else if (recipeName === 'Vanilla Cupcakes') {
-                document.write('<p>Mix dry and wet ingredients, fill cupcake liners, bake, and frost as desired.</p>');
-            } else if (recipeName === 'Lemon Bars') {
-                document.write('<p>Make shortbread crust, pour lemon filling, bake, and dust with powdered sugar.</p>');
+                document.write('<p>Prepare the pie crust, mix apple filling, assemble, and bake until golden brown.</p>');
+            } else if (recipeName === 'Healthier Vanilla Cupcakes') {
+                document.write('<p>Mix whole grain flour, natural sweeteners, softened butter, eggs, milk, vanilla extract, and baking powder. Fill cupcake liners, bake, and frost as desired.</p>');
+            } else if (recipeName === 'Healthier Lemon Bars') {
+                document.write('<p>Make a whole grain shortbread crust, pour lemon filling, bake, and dust with powdered sugar.</p>');
             } else if (recipeName === 'Chocolate Chip Cookies') {
-                document.write('<p>Cream butter and sugar, add eggs and vanilla, mix dry ingredients, fold in chocolate chips, bake.</p>');
+                document.write('<p>Cream butter and sugar, add eggs and vanilla, mix dry ingredients, fold in chocolate chips, and bake.</p>');
             } else if (recipeName === 'Peach Cobbler') {
                 document.write('<p>Slice and sweeten peaches, make batter, pour over peaches, bake until golden and bubbly.</p>');
             } else if (recipeName === 'Red Velvet Cake') {
                 document.write('<p>Mix dry and wet ingredients, add red food coloring, bake, and frost with cream cheese frosting.</p>');
-            } else if (recipeName === 'Banana Bread') {
-                document.write('<p>Mash bananas, mix with wet ingredients, fold in dry ingredients, bake until a toothpick comes out clean.</p>');
-            } else if (recipeName === 'Mango Sorbet') {
-                document.write('<p>Blend mangoes, sugar, water, and lime juice until smooth, freeze, and enjoy!</p>');
+            } else if (recipeName === 'Dairy-Free Banana Bread') {
+                document.write('<p>Mash bananas, mix with flour, sugar, eggs, dairy-free butter, baking soda, and vanilla extract. Bake until a toothpick comes out clean.</p>');
+            } else if (recipeName === 'Dairy-Free Mango Sorbet') {
+                document.write('<p>Blend mangoes, sugar, water, and lime juice until smooth. Freeze and enjoy!</p>');
             }
-
         }
+
 
         // Call the function when the page loads
         getRecipeDetails();
