@@ -67,6 +67,19 @@
     </style>
 </head>
 <body style="background-color: #f0f0f0;">
+    <!-- Gluten-Free Chocolate Cake -->
+<div class="recipe" onclick="showRecipe('Gluten-Free Chocolate Cake')">
+    <img src="images/chocolate_cake.jpeg" alt="Gluten-Free Chocolate Cake">
+    <h2 style="color: #ce7e00;">Gluten-Free Chocolate Cake</h2>
+    <p>A rich and moist chocolate cake that is perfect for any chocolate lover. Indulge in the delightful combination of gluten-free flour, cocoa, sugar, and non-dairy alternatives.</p>
+</div>
+
+<!-- Gluten-Free Strawberry Cheesecake -->
+<div class="recipe" onclick="showRecipe('Gluten-Free Strawberry Cheesecake')">
+    <img src="images/strawberry_cheesecake.jpeg" alt="Gluten-Free Strawberry Cheesecake">
+    <h2 style="color: #ce7e00;">Gluten-Free Strawberry Cheesecake</h2>
+    <p>Creamy cheesecake with a gluten-free graham cracker crust, topped with fresh strawberries. This gluten-free version is a delicious and elegant dessert for any occasion, made without traditional gluten-containing ingredients.</p>
+</div>
 
 <!-- Recipe 1: Spaghetti Bolognese -->
 <div class="recipe" onclick="showRecipe('Spaghetti Bolognese')">
@@ -147,6 +160,12 @@
     }
 </script>
 
+<script>
+    function showRecipe(recipeName) {
+        // You can replace the '#' with the path to your detailed recipe page
+        window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
+    }
+</script>
 
 <footer>
     <p>&copy; 2023 Kitchen Companion. All rights reserved.</p>
