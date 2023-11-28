@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Recipes</title>
+    <title>Dairy-Free Recipes</title>
     <header>
         <img src="images/kitchencompanion.png" alt="Kitchen Companion Logo">
     </header>
@@ -68,18 +68,64 @@
 </head>
 <body style="background-color: #f0f0f0;">
 
-    <!-- Dairy-Free Banana Bread -->
-<div class="recipe" onclick="showRecipe('Dairy-Free Banana Bread')">
-    <img src="images/banana_bread.jpeg" alt="Dairy-Free Banana Bread">
-    <h2 style="color: #ce7e00;">Dairy-Free Banana Bread</h2>
-    <p>Moist and flavorful banana bread made with ripe bananas, a hint of vanilla, and a touch of cinnamon. This dairy-free version is a comforting and delicious homemade treat suitable for those avoiding dairy.</p>
+    <!-- BEGIN BREAKFAST -->
+<div>
+    <h2>Breakfast</h2>
+</div>
+<!-- Overnight Oats  -->
+<div class="recipe" onclick="showRecipe('Overnight Oats')">
+    <img src="images/overnightoats.jpg" alt="Overnight Oats">
+    <h2 style="color: #0f9d58;">Basic Overnight Oats</h2>
+    <p>Description: Overnight oats are a healthy, delicious, and easy way to start your day. With so many flavor combinations to choose from, you're sure to find a recipe that you'll love. </p>
 </div>
 
-<!-- Dairy-Free Mango Sorbet -->
-<div class="recipe" onclick="showRecipe('Dairy-Free Mango Sorbet')">
-    <img src="images/mango_sorbet.jpeg" alt="Dairy-Free Mango Sorbet">
-    <h2 style="color: #ce7e00;">Dairy-Free Mango Sorbet</h2>
-    <p>Refreshing mango sorbet with the perfect balance of sweetness and a hint of citrus. This dairy-free version is a delightful frozen treat for hot summer days, suitable for those with dairy restrictions.</p>
+<!-- Breakfast Burrito  -->
+<div class="recipe" onclick="showRecipe('Breakfast Burrito')">
+    <img src="images/breakfastburrito.jpg" alt="breakfast burrito">
+    <h2 style="color: #0f9d58;">Breakfast Burrito</h2>
+    <p>Description: 
+        This recipe for Everything Bagel Breakfast Burritos from The Whole Smiths is the ultimate time-saver for busy mornings. Meal prep ahead and reheat for easy serving. Not to mention, there is a gluten-free and dairy-free option for you.
+    </p>
+</div>
+
+<!-- Acai Bowl  -->
+<div class="recipe" onclick="showRecipe('Acai Bowl')">
+    <img src="images/acaibowl.jpg" alt="Acai Bowl">
+    <h2 style="color: #0f9d58;">Acai Bowl</h2>
+    <p>Description: 
+        Ready in just a few minutes, this Acai Bowl Recipe is filled with acai berry puree, fruit, and all your favorite toppings. Learn how easy it is to make your very own Acai Bowl right from home and enjoy this powerhouse of fiber, antioxidants, and healthy fats anytime you want for a fraction of the cost!
+    </p>
+</div>
+
+<!-- Toast with Healthy Toppings  -->
+<div class="recipe" onclick="showRecipe('Toast with Healthy Toppings')">
+    <img src="images/toast.jpg" alt="Toast">
+    <h2 style="color: #0f9d58;">Toast with Healthy Toppings</h2>
+    <p>Description: 
+        A good slice of bread and a few favorite toppings is all it takes to make a simple, nourishing breakfast. Go sweet or savory, crunchy or not, nothing is off limits.
+    </p>
+</div>
+
+<!-- Chia Pudding  -->
+<div class="recipe" onclick="showRecipe('Chia Pudding')">
+    <img src="images/chiapudding.jpg" alt="Chia Pudding">
+    <h2 style="color: #0f9d58;">Chia Pudding</h2>
+    <p>Description: 
+        This 3-Ingredient Chia Pudding is made with almond milk, chia seeds & sweetener of choice; it’s a healthy snack loaded with protein, fiber and healthy fats!
+    </p>
+</div>
+<!-- END BREAKFAST  -->
+
+<!-- BEGIN LUNCH -->
+<div>
+    <h2>Lunch</h2>
+</div>
+
+<!-- END LUNCH -->
+
+<!-- BEGIN DINNER -->
+<div>
+    <h2>Dinner</h2>
 </div>
 
 <!-- Recipe 1: Spaghetti Bolognese -->
@@ -152,7 +198,28 @@
     <p>Ingredients: Hummus, whole wheat wrap, cucumber, tomato, bell peppers, lettuce, feta cheese.</p>
 </div>
 
-<!-- Add more recipes as needed -->
+<!-- END DINNER -->
+
+<!-- BEGIN DESSERTS -->
+<div>
+    <h2>Desserts</h2>
+</div>
+    <!-- Dairy-Free Banana Bread -->
+<div class="recipe" onclick="showRecipe('Dairy-Free Banana Bread')">
+    <img src="images/banana_bread.jpeg" alt="Dairy-Free Banana Bread">
+    <h2 style="color: #ce7e00;">Dairy-Free Banana Bread</h2>
+    <p>Moist and flavorful banana bread made with ripe bananas, a hint of vanilla, and a touch of cinnamon. This dairy-free version is a comforting and delicious homemade treat suitable for those avoiding dairy.</p>
+</div>
+
+<!-- Dairy-Free Mango Sorbet -->
+<div class="recipe" onclick="showRecipe('Dairy-Free Mango Sorbet')">
+    <img src="images/mango_sorbet.jpeg" alt="Dairy-Free Mango Sorbet">
+    <h2 style="color: #ce7e00;">Dairy-Free Mango Sorbet</h2>
+    <p>Refreshing mango sorbet with the perfect balance of sweetness and a hint of citrus. This dairy-free version is a delightful frozen treat for hot summer days, suitable for those with dairy restrictions.</p>
+</div>
+
+
+<!-- END DINNER -->
 
 <script>
     function showRecipe(recipeName) {
@@ -165,6 +232,13 @@
     function showRecipe(recipeName) {
         // You can replace the '#' with the path to your detailed recipe page
         window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
+    }
+</script>
+
+<script>
+    function showRecipe(recipeName) {
+        // You can replace the '#' with the path to your detailed recipe page
+        window.location.href = 'recipe-details-breakfast.html?recipe=' + encodeURIComponent(recipeName);
     }
 </script>
 
