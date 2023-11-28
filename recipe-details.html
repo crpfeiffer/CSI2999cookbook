@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Details</title>
+    <title>Dinner Recipe Details</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,23 +12,125 @@
             background-color: #f8f8f8;
             color: #333;
         }
-        h1, h2 {
-            color: #444;
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ce7e00;
+            color: white;
         }
+
+        header img {
+            width: 100%; /* Adjust the width to fill the available space */
+            height: auto;
+            max-width: 400px; /* Set a maximum width to prevent excessive stretching */
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: #faf8f8;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ce7e00;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
+
+        a {
+            text-decoration: none;
+            color: #ce7e00;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ce7e00;
+        }
+
+        .recipe-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
         .recipe-details {
-            max-width: 600px;
-            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ce7e00;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #ce7e00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
+
 <body>
+
+    <header>
+        <img src="images/kitchencompanion.png" alt="Kitchen Companion Logo">
+    </header>
+<body>
+
+<div class="recipe-details">
 
 <div class="recipe-details">
 
@@ -66,25 +169,25 @@
             // Display cooking steps
             document.write('<h2>Cooking Steps:</h2>');
             if (recipeName === 'Spaghetti Bolognese') {
-                document.write('<p>Boil water, cook spaghetti, brown ground beef, sauté onions and garlic, add tomatoes, season with salt and pepper, serve over spaghetti.</p>');
+                document.write('<p>Boil a large pot of water. Cook spaghetti according to package instructions. In a skillet, brown ground beef over medium heat. Sauté diced onions and minced garlic with olive oil until fragrant. Add diced tomatoes to the skillet and cook until they soften. Season the mixture with salt and pepper to taste. Combine the cooked spaghetti with the meat sauce. Serve the Bolognese sauce over the spaghetti.</p>');
             } else if (recipeName === 'Chicken Alfredo') {
-                document.write('<p>Cook fettuccine, sauté chicken breast, prepare Alfredo sauce with heavy cream, parmesan cheese, and butter, mix with pasta, season with salt and pepper.</p>');
+                document.write('<p>Cook fettuccine according to package instructions. Sauté chicken breast slices in a pan until fully cooked. In a saucepan, melt butter and add minced garlic. Pour in heavy cream and stir until it simmers. Add grated parmesan cheese and continue stirring until the sauce thickens. Combine the Alfredo sauce with the cooked fettuccine and chicken. Season with salt and pepper to taste.</p>');
             } else if (recipeName === 'Beef Stir Fry') {
-                document.write('<p>Slice beef into strips, stir-fry with broccoli and bell peppers, add soy sauce, ginger, and garlic, cook until beef is browned and vegetables are tender.</p>');
+                document.write('<p>Cut beef into strips and season with salt and pepper. Stir-fry beef in a hot pan until browned. Add broccoli and bell peppers to the pan and continue stir-frying. Pour in soy sauce, minced ginger, and minced garlic. Cook until the beef is browned and vegetables are tender.</p>');
             } else if (recipeName === 'Margherita Pizza') {
-                document.write('<p>Roll out pizza dough, spread tomato sauce, add fresh mozzarella slices, sprinkle with basil, drizzle with olive oil, bake until crust is golden.</p>');
+                document.write('<p>Preheat the oven to the recommended temperature for pizza dough. Roll out pizza dough on a floured surface. Spread tomato sauce over the dough. Arrange fresh mozzarella slices and basil leaves on top. Drizzle olive oil over the pizza and sprinkle with salt. Bake until the crust is golden and the cheese is melted.</p>');
             } else if (recipeName === 'Grilled Salmon') {
-                document.write('<p>Season salmon fillets with salt, pepper, and dill, grill until cooked through, squeeze lemon juice over the top before serving.</p>');
+                document.write('<p>Preheat the grill to medium-high heat. Season salmon fillets with salt, pepper, and dill. Place salmon on the grill and cook until it flakes easily. Squeeze lemon juice over the grilled salmon before serving.</p>');
             } else if (recipeName === 'Vegetarian Stir Fry') {
-                document.write('<p>Cube tofu, stir-fry with broccoli, carrots, snap peas, soy sauce, ginger, and garlic, drizzle with sesame oil.</p>');
+                document.write('<p>Cube tofu and marinate in soy sauce, ginger, and garlic. Stir-fry tofu with broccoli, carrots, and snap peas. Drizzle with sesame oil during the last minutes of cooking.</p>');
             } else if (recipeName === 'Chicken Caesar Salad') {
-                document.write('<p>Grill chicken, chop romaine lettuce, toss with croutons, parmesan cheese, and Caesar dressing, top with grilled chicken.</p>');
-            } else if (recipeName === 'Shrimp Scampi') {
-                document.write('<p>Cook linguine, sauté shrimp with garlic, white wine, lemon juice, and butter, toss with pasta, garnish with parsley.</p>');
+                document.write('<p>Grill chicken until fully cooked. Chop romaine lettuce and toss with croutons. Shred or slice grilled chicken and add to the salad. Top with parmesan cheese and Caesar dressing.</p>');
+        } else if (recipeName === 'Shrimp Scampi') {
+            document.write('<p>Cook linguine according to package instructions. Sauté shrimp in a pan with garlic and olive oil. Deglaze the pan with white wine and add lemon juice. Stir in butter until melted, then toss the shrimp and sauce with cooked linguine. Garnish with chopped parsley before serving.</p>');
             } else if (recipeName === 'BBQ Pulled Pork Sandwich') {
-                document.write('<p>Slow-cook pulled pork with barbecue sauce, shred, assemble on hamburger buns, top with coleslaw.</p>');
+                document.write('<p>Slow-cook pulled pork in barbecue sauce until tender. Shred the pork and assemble on hamburger buns. Top with coleslaw for added crunch and flavor.</p>');
             } else if (recipeName === 'Veggie Wrap') {
-                document.write('<p>Spread hummus on a whole wheat wrap, add cucumber, tomato, bell peppers, lettuce, and feta cheese, wrap and serve.</p>');
+                document.write('<p>Spread hummus on a whole wheat wrap. Add sliced cucumber, tomato, bell peppers, and lettuce. Sprinkle feta cheese over the veggies. Wrap the ingredients and serve.</p>');
             }
 
         }
