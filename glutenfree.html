@@ -87,48 +87,12 @@
         </p>
 </div>
 
-<!-- Strawberry Banana Smoothie  -->
-<div class="recipe" onclick="showRecipe('Strawberry Banana Smoothie')">
-    <img src="images/strawberrybananasmoothie.jpg" alt="StrawberryBananaSmoothie">
-    <h2 style="color: #0f9d58;">Strawberry Banana Smoothie</h2>
-    <p>Description: 
-        This strawberry banana smoothie is made from four simple ingredients - strawberries, banana, milk and yogurt. Watch the video above to see how quickly it comes together!
-    </p>
-</div>
-
-<!-- Red Berry Protein Smoothie  -->
-<div class="recipe" onclick="showRecipe('Red Berry Protein Smoothie')">
-    <img src="images/redberry.jpg" alt="red berry smoothie">
-    <h2 style="color: #0f9d58;">Red Berry Protein Smoothie</h2>
-    <p>Description: 
-        This smoothie is so simple and delicious, with the addition of white beans making it super creamy and chock full of protein. Don't worry, you won't even know the beans are in there. Vegan, vegetarian, dairy-free, and refined sugar-free, this is one easy smoothie that will fast make it into your regular routine.
-    </p>
-</div>
-
-<!-- Acai Bowl  -->
-<div class="recipe" onclick="showRecipe('Acai Bowl')">
-    <img src="images/acaibowl.jpg" alt="Acai Bowl">
-    <h2 style="color: #0f9d58;">Acai Bowl</h2>
-    <p>Description: 
-        Ready in just a few minutes, this Acai Bowl Recipe is filled with acai berry puree, fruit, and all your favorite toppings. Learn how easy it is to make your very own Acai Bowl right from home and enjoy this powerhouse of fiber, antioxidants, and healthy fats anytime you want for a fraction of the cost!
-    </p>
-</div>
-
 <!-- Eggs Benedict with homemade Hollandaise Sauce  -->
 <div class="recipe" onclick="showRecipe('Eggs Benedict with homemade Hollandaise Sauce')">
     <img src="images/eggsbenedict.jpg" alt="Eggs">
     <h2 style="color: #0f9d58;">Eggs Benedict with homemade Hollandaise Sauce</h2>
     <p>Description: 
         Eggs Benedict is my favorite breakfast menu item, and it's super easy to make from home! It starts with a toasted english muffin, topped with a slice or two of Canadian bacon, a poached egg, and smothered in traditional Eggs Benedict sauce, called hollandaise sauce.
-    </p>
-</div>
-
-<!-- Chia Pudding  -->
-<div class="recipe" onclick="showRecipe('Chia Pudding')">
-    <img src="images/chiapudding.jpg" alt="Chia Pudding">
-    <h2 style="color: #0f9d58;">Chia Pudding</h2>
-    <p>Description: 
-        This 3-Ingredient Chia Pudding is made with almond milk, chia seeds & sweetener of choice; it’s a healthy snack loaded with protein, fiber and healthy fats!
     </p>
 </div>
 
@@ -168,14 +132,6 @@
     <p>Descriptions: Salmon fillets, lemon, dill, olive oil, salt, pepper.</p>
 </div>
 
-<!-- Recipe 4: Vegetarian Stir Fry (Gluten-Free) -->
-<div class="recipe" onclick="showRecipe('Vegetarian Stir Fry')">
-    <img src="images/vegetarian_stir_fry.jpg" alt="Vegetarian Stir Fry">
-    <h2 style="color: #ce7e00;">Vegetarian Stir Fry (Gluten-Free)</h2>
-    <p>Descriptions: Tofu, broccoli, carrots, snap peas, gluten-free soy sauce, ginger, garlic, sesame oil.</p>
-</div>
-
-
 <!-- BEGIN DESSERTS -->
 <div>
     <h2>Desserts</h2>
@@ -199,21 +155,7 @@
 <script>
     function showRecipe(recipeName) {
         // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details.html?recipe=' + encodeURIComponent(recipeName);
-    }
-</script>
-
-<script>
-    function showRecipe(recipeName) {
-        // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
-    }
-</script>
-
-<script>
-    function showRecipe(recipeName) {
-        // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details-breakfast.html?recipe=' + encodeURIComponent(recipeName);
+        window.location.href = 'recipe-details-glutenfree.html?recipe=' + encodeURIComponent(recipeName);
     }
 </script>
 
