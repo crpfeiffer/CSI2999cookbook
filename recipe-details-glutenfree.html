@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .recipe-details {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="recipe-details-glutenfree">
+
+    <script>
+        function getRecipeDetails() {
+            // Get the recipe name from the URL
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const recipeName = urlParams.get('recipe');
+
+            // Display details based on the recipe name
+            document.write('<h1>' + recipeName + '</h1>');
+
+           // Define ingredients for each recipe
+           const ingredients = {
+                    'Overnight Oats': ['Oats', 'Milk', 'Yogurt', 'Honey', 'Fruits'],
+                    'Scrambled Eggs with Cheese': ['Eggs', 'Cheese', 'Salt', 'Pepper', 'Butter'],
+                    'Eggs Benedict with homemade Hollandaise Sauce': ['English Muffin', 'Canadian Bacon', 'Poached Egg', 'Hollandaise Sauce'],
+                    'Chicken Alfredo': ['Chicken breast', 'Fettuccine', 'Heavy cream', 'Parmesan cheese', 'Butter', 'Garlic', 'Salt', 'Pepper'],
+                    'Margherita Pizza': ['Gluten-free pizza dough', 'Tomato sauce', 'Fresh mozzarella', 'Basil', 'Olive oil', 'Salt'],
+                    'Grilled Salmon': ['Salmon fillets', 'Lemon', 'Dill', 'Olive oil', 'Salt', 'Pepper'],
+                    'Gluten-Free Chocolate Cake': ['Gluten-free flour', 'Cocoa', 'Sugar', 'Non-dairy alternatives'],
+                    'Gluten-Free Strawberry Cheesecake': ['Cream cheese', 'Gluten-free graham cracker crust', 'Fresh strawberries']
+                };
+
+            // Display ingredients in list format
+            document.write('<h2>Ingredients:</h2>');
+            document.write('<ul>');
+            ingredients[recipeName].forEach(ingredient => {
+                document.write('<li>' + ingredient + '</li>');
+            });
+            document.write('</ul>');
+
+            // Display cooking steps
+            document.write('<h2>Cooking Steps:</h2>');
+                if (recipeName === 'Overnight Oats') {
+                    document.write('<p>Combine oats, milk, yogurt, and honey in a jar or container. Stir well, cover, and refrigerate overnight. In the morning, add your favorite fruits and enjoy!</p>');
+                } else if (recipeName === 'Scrambled Eggs with Cheese') {
+                    document.write('<p>Whisk eggs in a bowl and season with salt and pepper. Heat butter in a pan, pour in the eggs, and stir continuously. Add cheese and continue stirring until eggs are fully cooked.</p>');
+                } else if (recipeName === 'Eggs Benedict with homemade Hollandaise Sauce') {
+                    document.write('<p>Toast an English muffin and top with Canadian bacon. Poach an egg and place it on the bacon. Drizzle with homemade hollandaise sauce.</p>');
+                } else if (recipeName === 'Chicken Alfredo') {
+                    document.write('<p>Cook gluten-free fettuccine according to package instructions. Sauté chicken breast slices in a pan until fully cooked. In a saucepan, melt butter and add minced garlic. Pour in heavy cream and stir until it simmers. Add grated parmesan cheese and continue stirring until the sauce thickens. Combine the Alfredo sauce with the cooked gluten-free fettuccine and chicken. Season with salt and pepper to taste.</p>');
+                } else if (recipeName === 'Margherita Pizza') {
+                    document.write('<p>Preheat the oven to the recommended temperature for gluten-free pizza dough. Roll out gluten-free pizza dough on a floured surface. Spread tomato sauce over the dough. Arrange fresh mozzarella slices and basil leaves on top. Drizzle olive oil over the pizza and sprinkle with salt. Bake until the crust is golden and the cheese is melted.</p>');
+                } else if (recipeName === 'Grilled Salmon') {
+                    document.write('<p>Preheat the grill to medium-high heat. Season salmon fillets with salt, pepper, and dill. Place salmon on the grill and cook until it flakes easily. Squeeze lemon juice over the grilled salmon before serving.</p>');
+                } else if (recipeName === 'Gluten-Free Chocolate Cake') {
+                    document.write('<p>A rich and moist chocolate cake that is perfect for any chocolate lover. Indulge in the delightful combination of gluten-free flour, cocoa, sugar, and non-dairy alternatives.</p>');
+                } else if (recipeName === 'Gluten-Free Strawberry Cheesecake') {
+                    document.write('<p>Creamy cheesecake with a gluten-free graham cracker crust, topped with fresh strawberries. This gluten-free version is a delicious and elegant dessert for any occasion, made without traditional gluten-containing ingredients.</p>');
+                }
+        }
+
+
+        // Call the function when the page loads
+        getRecipeDetails();
+    </script>
+
+</div>
+
+</body>
+</html>
