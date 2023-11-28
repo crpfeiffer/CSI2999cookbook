@@ -68,6 +68,20 @@
 </head>
 <body style="background-color: #f0f0f0;">
 
+    <!-- Dairy-Free Banana Bread -->
+<div class="recipe" onclick="showRecipe('Dairy-Free Banana Bread')">
+    <img src="images/banana_bread.jpeg" alt="Dairy-Free Banana Bread">
+    <h2 style="color: #ce7e00;">Dairy-Free Banana Bread</h2>
+    <p>Moist and flavorful banana bread made with ripe bananas, a hint of vanilla, and a touch of cinnamon. This dairy-free version is a comforting and delicious homemade treat suitable for those avoiding dairy.</p>
+</div>
+
+<!-- Dairy-Free Mango Sorbet -->
+<div class="recipe" onclick="showRecipe('Dairy-Free Mango Sorbet')">
+    <img src="images/mango_sorbet.jpeg" alt="Dairy-Free Mango Sorbet">
+    <h2 style="color: #ce7e00;">Dairy-Free Mango Sorbet</h2>
+    <p>Refreshing mango sorbet with the perfect balance of sweetness and a hint of citrus. This dairy-free version is a delightful frozen treat for hot summer days, suitable for those with dairy restrictions.</p>
+</div>
+
 <!-- Recipe 1: Spaghetti Bolognese -->
 <div class="recipe" onclick="showRecipe('Spaghetti Bolognese')">
     <img src="images/spaghetti_bolognese.jpg" alt="Spaghetti Bolognese">
@@ -144,6 +158,13 @@
     function showRecipe(recipeName) {
         // You can replace the '#' with the path to your detailed recipe page
         window.location.href = 'recipe-details.html?recipe=' + encodeURIComponent(recipeName);
+    }
+</script>
+
+<script>
+    function showRecipe(recipeName) {
+        // You can replace the '#' with the path to your detailed recipe page
+        window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
     }
 </script>
 
