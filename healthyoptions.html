@@ -72,21 +72,6 @@
 <div>
     <h2>Breakfast</h2>
 </div>
-<!-- Overnight Oats  -->
-<div class="recipe" onclick="showRecipe('Overnight Oats')">
-    <img src="images/overnightoats.jpg" alt="Overnight Oats">
-    <h2 style="color: #0f9d58;">Basic Overnight Oats</h2>
-    <p>Description: Overnight oats are a healthy, delicious, and easy way to start your day. With so many flavor combinations to choose from, you're sure to find a recipe that you'll love. </p>
-</div>
-
-<!-- Strawberry Banana Smoothie  -->
-<div class="recipe" onclick="showRecipe('Strawberry Banana Smoothie')">
-    <img src="images/strawberrybananasmoothie.jpg" alt="StrawberryBananaSmoothie">
-    <h2 style="color: #0f9d58;">Strawberry Banana Smoothie</h2>
-    <p>Description: 
-        This strawberry banana smoothie is made from four simple ingredients - strawberries, banana, milk and yogurt. Watch the video above to see how quickly it comes together!
-    </p>
-</div>
 
 <!-- Red Berry Protein Smoothie  -->
 <div class="recipe" onclick="showRecipe('Red Berry Protein Smoothie')">
@@ -152,13 +137,6 @@
     <p>Ingredients: Grilled chicken, romaine lettuce, croutons, parmesan cheese, Caesar dressing.</p>
 </div>
 
-<!-- Recipe 10: Veggie Wrap -->
-<div class="recipe" onclick="showRecipe('Veggie Wrap')">
-    <img src="images/veggie_wrap.jpg" alt="Veggie Wrap">
-    <h2 style="color: #ce7e00;">Veggie Wrap</h2>
-    <p>Ingredients: Hummus, whole wheat wrap, cucumber, tomato, bell peppers, lettuce, feta cheese.</p>
-</div>
-
 <!-- END DINNER -->
 
 <!-- BEGIN DESSERTS -->
@@ -185,23 +163,10 @@
 <script>
     function showRecipe(recipeName) {
         // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details.html?recipe=' + encodeURIComponent(recipeName);
+        window.location.href = 'recipe-details-healthyoptions.html?recipe=' + encodeURIComponent(recipeName);
     }
 </script>
 
-<script>
-    function showRecipe(recipeName) {
-        // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details2.html?recipe=' + encodeURIComponent(recipeName);
-    }
-</script>
-
-<script>
-    function showRecipe(recipeName) {
-        // You can replace the '#' with the path to your detailed recipe page
-        window.location.href = 'recipe-details-breakfast.html?recipe=' + encodeURIComponent(recipeName);
-    }
-</script>
 
 <footer>
     <p>&copy; 2023 Kitchen Companion. All rights reserved.</p>
