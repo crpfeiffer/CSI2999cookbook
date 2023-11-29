@@ -50,7 +50,10 @@
                     'Margherita Pizza': ['Gluten-free pizza dough', 'Tomato sauce', 'Fresh mozzarella', 'Basil', 'Olive oil', 'Salt'],
                     'Grilled Salmon': ['Salmon fillets', 'Lemon', 'Dill', 'Olive oil', 'Salt', 'Pepper'],
                     'Gluten-Free Chocolate Cake': ['Gluten-free flour', 'Cocoa', 'Sugar', 'Non-dairy alternatives'],
-                    'Gluten-Free Strawberry Cheesecake': ['Cream cheese', 'Gluten-free graham cracker crust', 'Fresh strawberries']
+                    'Gluten-Free Strawberry Cheesecake': ['Cream cheese', 'Gluten-free graham cracker crust', 'Fresh strawberries'],
+                    'Macaroni and Cheese (Gluten-Free)': ['8 oz gluten-free elbow macaroni',' 2 cups shredded sharp cheddar cheese',' 1/2 cup grated Parmesan cheese', '3 cups milk (you can use regular or a non-dairy alternative)',' 1/4 cup unsalted butter', '1/4 cup gluten-free all-purpose flour', '1/2 teaspoon salt', '1/4 teaspoon black pepper', '1/4 teaspoon paprika (optional, for color and flavor)', 'Gluten-free breadcrumbs (optional, for topping)'],
+                    'Guyanese Chow Mein (Gluten-Free)': ['3 tablespoons gluten-free soy sauce', '2 tablespoons gluten-free oyster sauce', '1 tablespoon gluten-free hoisin sauce', '1 tablespoon rice vinegar', '1 tablespoon sugar', '1/2 cup gluten-free chicken or vegetable broth', '8 oz gluten-free chow mein noodles (rice noodles or other gluten-free noodles)', '2 tablespoons vegetable oil', '2 cloves garlic',  '1 small onion', '1 carrot(julienned)', '1 bell pepper','1 cup shredded cabbage', '1 cup bean sprouts', '1 cup sliced mushrooms' , '2 green onions (for garnish)' , 'Salt and pepper to taste']
+
                 };
 
             // Display ingredients in list format
@@ -79,7 +82,11 @@
                     document.write('<p>A rich and moist chocolate cake that is perfect for any chocolate lover. Indulge in the delightful combination of gluten-free flour, cocoa, sugar, and non-dairy alternatives.</p>');
                 } else if (recipeName === 'Gluten-Free Strawberry Cheesecake') {
                     document.write('<p>Creamy cheesecake with a gluten-free graham cracker crust, topped with fresh strawberries. This gluten-free version is a delicious and elegant dessert for any occasion, made without traditional gluten-containing ingredients.</p>');
-                }
+            } else if (recipeName === 'Macaroni and Cheese (Gluten-Free)') {
+                document.write('<p>For a gluten-free mac and cheese, start by boiling your favorite gluten-free pasta according to package instructions. In a separate saucepan, melt 2 tablespoons of butter over medium heat and whisk in 2 tablespoons of gluten-free all-purpose flour to create a roux. Gradually add 2 cups of milk, stirring continuously until the mixture thickens. Reduce heat to low and stir in 2 cups of shredded sharp cheddar cheese until melted and smooth. Season with salt and pepper to taste. Combine the cheesy sauce with the cooked gluten-free pasta, ensuring the pasta is well coated. Optionally, you can add a pinch of ground mustard for extra flavor. Transfer the gluten-free mac and cheese to a baking dish, sprinkle with additional cheese if desired, and bake at 350°F (175°C) until bubbly and golden on top. Enjoy a comforting bowl of gluten-free mac and cheese that rivals the classic version!</p>');
+            } else if (recipeName === 'Guyanese Chow Mein (Gluten-Free)') {
+                document.write('<p>To make gluten-free Guyanese Chow Mein, start by whisking together a flavorful sauce comprising 3 tablespoons of gluten-free soy sauce, 2 tablespoons each of gluten-free oyster sauce and hoisin sauce, 1 tablespoon of rice vinegar, 1 tablespoon of sugar, and 1/2 cup of gluten-free chicken or vegetable broth. Set this aside. Cook 8 oz of gluten-free chow mein noodles according to the package instructions. Meanwhile, stir-fry a mix of colorful vegetables, including onion, carrot, bell pepper, cabbage, bean sprouts, and mushrooms, in a wok with minced garlic and vegetable oil. Toss the cooked noodles into the wok, pour the prepared sauce over them, and mix everything well. Season with salt and pepper, stir in chopped green onions, and serve the gluten-free Guyanese Chow Mein hot. This dish offers a delightful combination of textures and flavors, making it a satisfying gluten-free option.</p>');
+            }
         }
 
 

@@ -153,6 +153,8 @@
                 'Chicken Caesar Salad': ['Grilled chicken', 'romaine lettuce', 'croutons', 'parmesan cheese', 'Caesar dressing'],
                 'Healthier Vanilla Cupcakes': ['Whole grain flour', 'natural sweeteners', 'butter', 'eggs', 'milk', 'vanilla extract', 'baking powder'],
                 'Healthier Lemon Bars': ['Whole grain shortbread crust', 'natural sweeteners', 'flour', 'eggs', 'lemon juice', 'powdered sugar'],
+                'Lentil and Vegetable Stir-Fry' : ['1 cup dry lentils (brown or green)',  '2 tablespoons vegetable oil', '1 onion', '2 carrots', '1 bell pepper', '1 zucchini' , '1 cup broccoli' , '3 cloves garlic', '1 tablespoon ginger' , '3 tablespoons soy sauce (or tamari for gluten-free)', '1 tablespoon rice vinegar', '1 tablespoon hoisin sauce', '1 teaspoon sesame oil', '1 teaspoon Sriracha sauce (optional, for heat)', 'Salt and pepper to taste', 'Sesame seeds and green onions for garnish (optional)', 'Cooked rice or noodles for serving'],
+                'Vegetable Fried Rice' : ['2 cups cooked jasmine or basmati rice (preferably cooled and day-old)', '2 tablespoons vegetable oil1 onion', '2 cloves garlic' , '1 carrot', '1 bell pepper' , '1 cup frozen peas', '2 eggs beaten (optional for added protein)', '3 tablespoons soy sauce', '1 tablespoon oyster sauce (optional)', '1 teaspoon sesame oil' , 'Salt and pepper to taste', 'Green onions', 'Sesame seeds for garnish (optional)']
                 
             };
 
@@ -184,7 +186,12 @@
                 document.write('<p>Mix whole grain flour, natural sweeteners, softened butter, eggs, milk, vanilla extract, and baking powder. Fill cupcake liners, bake, and frost as desired.</p>');
             } else if (recipeName === 'Healthier Lemon Bars') {
                 document.write('<p>Make a whole grain shortbread crust, pour lemon filling, bake, and dust with powdered sugar.</p>');
-            } 
+            }
+            else if (recipeName === 'Lentil and Vegetable Stir-Fry') {
+                document.write('<p>Begin by cooking 1 cup of dry lentils according to package instructions until they are tender but not mushy. In a large skillet or wok, heat 2 tablespoons of vegetable oil over medium-high heat. Add thinly sliced onions, julienned carrots, sliced bell peppers, and any other preferred vegetables. Stir-fry for about 4-5 minutes until the vegetables are slightly tender. Incorporate minced garlic and ginger for an aromatic touch. Once the vegetables are ready, add the cooked lentils to the skillet and mix well. In a small bowl, whisk together 3 tablespoons of soy sauce, 1 tablespoon of rice vinegar, 1 tablespoon of hoisin sauce, and a dash of sesame oil. Pour the sauce over the lentil and vegetable mixture, stirring to ensure an even coating. Season with salt and pepper to taste. Continue stir-frying for an additional 2-3 minutes to meld the flavors. Serve the Lentil and Vegetable Stir-Fry over a bed of rice or noodles, and enjoy this nutritious and satisfying dish. Feel free to customize with additional vegetables or your preferred protein source.</p>');
+            } else if (recipeName === 'Vegetable Fried Rice') {
+                document.write('<p>Begin by heating a large skillet or wok over medium-high heat. Add a couple of tablespoons of vegetable oil and sauté finely chopped onions until translucent. Toss in diced carrots, peas, and any other preferred vegetables, stir-frying until they are tender yet crisp. If you have leftover cooked vegetables or protein, this is a great time to add them. Push the vegetables to one side of the skillet, crack in two eggs, and scramble them until fully cooked. Incorporate the cooked rice into the skillet, breaking up any clumps. Drizzle soy sauce over the rice and mix well until all the ingredients are evenly coated. Optionally, add a pinch of salt, pepper, and a dash of sesame oil for extra flavor. Continue stir-frying for a few more minutes, allowing the rice to heat through and absorb the flavors. Garnish with chopped green onions and serve this Vegetable Fried Rice as a delightful and customizable meal.</p>');
+            }
     }
         // Call the function when the page loads
         getRecipeDetails();

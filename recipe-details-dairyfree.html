@@ -174,7 +174,10 @@
                 'Peach Cobbler': ['Fresh peaches', 'sugar', 'flour', 'butter', 'cinnamon', 'baking powder', 'milk'],
                 'Red Velvet Cake': ['Cake flour', 'buttermilk', 'cocoa powder', 'red food coloring', 'cream cheese frosting'],
                 'Dairy-Free Banana Bread': ['Ripe bananas', 'flour', 'sugar', 'eggs', 'dairy-free butter', 'baking soda', 'vanilla extract'],
-                'Dairy-Free Mango Sorbet': ['Mangoes', 'sugar', 'water', 'lime juice']
+                'Dairy-Free Mango Sorbet': ['Mangoes', 'sugar', 'water', 'lime juice'],
+                'Spaghetti with Tomato Basil Sauce (Dairy-Free)' : ['8 oz gluten-free or regular spaghetti', '2 tablespoons olive oil', '3 cloves garlic', '1 can (28 oz) crushed tomatoes', '1 teaspoon dried oregano', '1 teaspoon dried basil', '1/2 teaspoon red pepper flakes (optional for heat)', 'Salt and pepper to taste', 'Fresh basil leaves for garnish'],
+
+                'Chickpea and Avocado Wrap (Dairy-Free)' : ['1 can (15 oz) chickpeas', '1 tablespoon olive oil', '1 teaspoon ground cumin', '1 teaspoon paprika', 'Salt and pepper to taste', 'Juice of half a lemon' , '1 ripe avocado' , '1 tablespoon lime juice', 'Salt and pepper to taste' , 'Whole grain or gluten-free wraps', 'Fresh spinach or lettuce leaves', 'Sliced tomatoes', 'Red onion'],
             };
 
             // Display ingredients in list format
@@ -249,7 +252,12 @@
             } else if (recipeName === 'Dairy-Free Mango Sorbet') {
                 document.write('<p>Blend mangoes, sugar, water, and lime juice until smooth. Freeze and enjoy!</p>');
             }
-
+            else if (recipeName === 'Spaghetti with Tomato Basil Sauce (Dairy-Free)') {
+                document.write('<p>For a delicious dairy-free Spaghetti with Tomato Basil Sauce, start by cooking your favorite gluten-free or regular spaghetti according to the package instructions. In a large skillet, heat 2 tablespoons of olive oil over medium heat. Add 3 cloves of minced garlic and sauté until fragrant. Add a can (about 28 oz) of crushed tomatoes to the skillet, along with 1 teaspoon each of dried oregano and dried basil. Season with salt and pepper to taste. If you prefer a hint of sweetness, you can add 1 teaspoon of sugar. Simmer the sauce for about 20-25 minutes, allowing it to thicken and the flavors to meld. Meanwhile, cook the spaghetti. Once the sauce is ready, toss it with the cooked spaghetti. If you desire a creamier texture, you can add a dairy-free alternative like coconut cream or almond milk. Garnish with fresh basil leaves and serve your dairy-free Spaghetti with Tomato Basil Sauce hot. </p>');
+            }
+            else if (recipeName === 'Chickpea and Avocado Wrap (Dairy-Free)') {
+                document.write('<p> In a bowl, mash the chickpeas with a fork or potato masher, creating a coarse texture. Add diced avocado, finely chopped red onion, fresh cilantro, lime juice, and a pinch of salt and pepper to the chickpea mixture, creating a flavorful and creamy filling. Lay out your preferred dairy-free wraps and spoon the chickpea and avocado mixture onto each one. Optionally, add fresh spinach or lettuce leaves for an extra crunch. Fold in the sides of the wrap and then roll it up tightly from the bottom, creating a neat and satisfying wrap. Serve these delightful Chickpea and Avocado Wraps immediately, and relish the combination of protein-packed chickpeas and creamy avocado in a convenient, dairy-free package.</p>');
+            }
         }
 
         // Call the function when the page loads
