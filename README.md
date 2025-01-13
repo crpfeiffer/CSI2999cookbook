@@ -24,6 +24,7 @@
   - High-quality images  
 
 ---
+<img width="358" alt="image" src="https://github.com/user-attachments/assets/d3269e12-6084-4f2a-a735-b6499aece45d" />
 
 ## How to Use  
 1. Clone the repository:  
